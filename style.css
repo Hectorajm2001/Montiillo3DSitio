@@ -1,169 +1,85 @@
-/* Estilos globales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Fondo claro */
-    color: #333; /* Texto oscuro */
+    font-family: Arial, sans-serif;
+    background-color: #DDDDD9;
 }
 
-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px; /* Bordes redondeados, para un toque más suave */
-}
-
-/* Estilos para el encabezado */
 header {
-    background-color: #1c1c1c; /* Color oscuro para el encabezado */
-    color: white; /* Texto claro */
-    padding: 20px; /* Más espacio para una mejor apariencia */
+    background-color: #375D6C;
+    padding: 20px;
+    color: white;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
 }
 
-header nav {
-    margin-top: 10px;
-}
-
-header nav ul {
-    list-style-type: none; /* Elimina las viñetas */
+nav ul {
+    list-style: none;
     padding: 0;
-    display: flex; /* Flexbox para disposición horizontal */
-    justify-content: center; /* Centra los elementos */
 }
 
-header nav ul li {
-    margin-right: 20px;
+nav ul li {
+    display: inline;
+    margin-right: 10px;
 }
 
-header nav ul li a {
-    color: white; /* Texto blanco para contraste */
+nav ul li a {
+    color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Espacio para los enlaces */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s; /* Transición suave */
 }
 
-header nav ul li a:hover {
-    background-color: #333; /* Color en hover */
-    text-decoration: underline; /* Sutil efecto en hover */
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Estilos para la galería */
-#gallery {
-    padding: 40px; /* Más espacio para separar secciones */
-    text-align: center;
+main {
+    padding: 20px;
 }
 
-.carousel {
-    position: relative; /* Permite el posicionamiento relativo de los elementos */
-    width: 100%; /* Abarca todo el ancho del contenedor */
-    padding: 40px; /* Más espacio para separar secciones */
-    text-align: center;
+h2 {
+    color: #375D6C;
 }
 
-.carousel-item {
+.gallery {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
-    justify-content: center; /* Centra las imágenes */
-    gap: 10px; /* Espacio entre imágenes */
-    position: absolute; /* Posicionamiento absoluto para facilitar el cambio entre imágenes */
+    justify-content: space-between;
 }
 
-.carousel-item img:hover {
-    transform: scale(1.1); /* Efecto de zoom en hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
-}
-
-.carousel img {
-    margin: 15px;
-    width: 150px; /* Ajusta el tamaño según tus necesidades */
-    height: 150px;
-    object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
-}
-
-
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
-    justify-content: center; /* Centra las imágenes */
-    gap: 10px; /* Espacio entre imágenes */
-}
-
-
-.gallery-container img {
-    margin: 15px;
-    border: 2px solid #ddd; /* Bordes ligeros para las imágenes */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
-}
-
-.gallery-container img:hover {
-    transform: scale(1.1); /* Efecto de zoom en hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
-}
-
-/* Estilos para la sección de contacto */
-#contact {
-    padding: 40px; /* Más espacio para esta sección */
+.gallery img {
+    width: 32%;
+    height: auto;
+    border: 1px solid #375D6C;
 }
 
 form {
-    display: flex; /* Disposición vertical */
-    flex-direction: column; /* Orientación de los elementos */
+    display: flex;
+    flex-direction: column;
 }
 
 form label {
-    margin-top: 10px; /* Espacio para separar los elementos */
-    font-weight: bold; /* Negrita para destacar las etiquetas */
+    margin-bottom: 10px;
 }
 
 form input, form textarea {
-    padding: 10px; /* Espacio dentro de los campos */
-    font-size: 1em; /* Tamaño del texto */
-    border: 1px solid #ddd; /* Bordes ligeros */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: box-shadow 0.3s; /* Transición suave */
+    padding: 10px;
+    border: 1px solid #798B95;
+    margin-bottom: 10px;
 }
 
-form input:focus, form textarea:focus {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra al hacer foco */
+form button {
+    padding: 10px;
+    background-color: #375D6C;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-button {
-    margin-top: 20px;
-    padding: 12px 20px; /* Tamaño del botón */
-    background-color: #1c1c1c; /* Color oscuro para los botones */
-    color: white; /* Texto blanco para contraste */
-    border: none; /* Sin borde adicional */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
-    transition: background-color 0.3s; /* Transición suave */
+form button:hover {
+    background-color: #798B95;
 }
 
-button:hover {
-    background-color: #333; /* Cambio de color en hover */
-}
-
-button:active {
-    background-color: #555; /* Cambio de color al hacer clic */
-}
-
-/* Estilos para el pie de página */
 footer {
-    background-color: #1c1c1c; /* Fondo oscuro para el pie de página */
-    color: white; /* Texto blanco */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espacio para el pie de página */
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-}
-
-/* Estilos para el mapa (si se incluye) */
-#map {
-    height: 400px; /* Altura del mapa */
-    width: 100%; /* Abarca todo el ancho */
+    background-color: #375D6C;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
