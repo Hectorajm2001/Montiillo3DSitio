@@ -70,11 +70,18 @@ header nav ul li a:hover {
     position: absolute; /* Posicionamiento absoluto para facilitar el cambio entre imágenes */
 }
 
+.carousel-item img:hover {
+    transform: scale(1.1); /* Efecto de zoom en hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
 .carousel img {
+    margin: 15px;
     width: 150px; /* Ajusta el tamaño según tus necesidades */
     height: 150px;
     object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
     border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
 }
 
 
