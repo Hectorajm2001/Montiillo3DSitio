@@ -57,6 +57,26 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+.carousel {
+    position: relative; /* Permite el posicionamiento relativo de los elementos */
+    width: 100%; /* Abarca todo el ancho del contenedor */
+}
+
+.carousel-item {
+    display: none; /* Oculta las imágenes por defecto */
+    position: absolute; /* Posicionamiento absoluto para facilitar el cambio entre imágenes */
+    top: 0;
+    left: 0;
+}
+
+.carousel img {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
 .gallery-container {
     display: flex;
     flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
