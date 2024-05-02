@@ -1,19 +1,19 @@
 /* Estilos globales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Fondo gris claro para contraste */
-    color: #333; /* Texto oscuro para legibilidad */
+    background-color: #f5f5f5; /* Fondo claro */
+    color: #333; /* Texto oscuro */
 }
 
 /* Estilos para el encabezado */
 header {
     background-color: #1c1c1c; /* Color oscuro para el encabezado */
-    color: #f5f5f5; /* Texto claro */
-    padding: 15px;
+    color: white; /* Texto claro */
+    padding: 20px; /* Más espacio para una mejor apariencia */
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
 }
 
 header nav {
@@ -21,7 +21,7 @@ header nav {
 }
 
 header nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Elimina las viñetas */
     padding: 0;
     display: flex; /* Flexbox para disposición horizontal */
     justify-content: center; /* Centra los elementos */
@@ -32,62 +32,62 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #f5f5f5;
+    color: white; /* Texto blanco para contraste */
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 10px 20px; /* Espacio para los enlaces */
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s; /* Transición suave */
 }
 
 header nav ul li a:hover {
-    background-color: #333; /* Cambia el color en hover */
-    text-decoration: underline;
+    background-color: #333; /* Color en hover */
+    text-decoration: underline; /* Sutil efecto en hover */
 }
 
 /* Estilos para la galería */
 #gallery {
-    padding: 30px;
+    padding: 40px; /* Más espacio para separar secciones */
     text-align: center;
 }
 
 .gallery-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite varias líneas */
-    justify-content: center;
+    display: flex; /* Flexbox para disposición dinámica */
+    flex-wrap: wrap; /* Para adaptarse a diferentes tamaños de pantalla */
+    justify-content: center; /* Centra los elementos */
 }
 
 .gallery-container img {
     margin: 15px;
-    border: 2px solid #ddd;
+    border: 2px solid #ddd; /* Bordes ligeros para las imágenes */
     border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
 }
 
 .gallery-container img:hover {
     transform: scale(1.1); /* Efecto de zoom en hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
 }
 
 /* Estilos para la sección de contacto */
 #contact {
-    padding: 30px;
+    padding: 40px; /* Más espacio para esta sección */
 }
 
 form {
-    display: flex;
-    flex-direction: column; /* Disposición vertical */
+    display: flex; /* Disposición vertical */
+    flex-direction: column; /* Orientación de los elementos */
 }
 
 form label {
-    margin-top: 10px;
-    font-weight: bold; /* Negrita para destacar */
+    margin-top: 10px; /* Espacio para separar los elementos */
+    font-weight: bold; /* Negrita para destacar las etiquetas */
 }
 
 form input, form textarea {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 10px; /* Espacio dentro de los campos */
+    font-size: 1em; /* Tamaño del texto */
+    border: 1px solid #ddd; /* Bordes ligeros */
+    border-radius: 5px; /* Bordes redondeados */
     transition: box-shadow 0.3s; /* Transición suave */
 }
 
@@ -97,12 +97,12 @@ form input:focus, form textarea:focus {
 
 button {
     margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #1c1c1c;
-    color: white;
-    border: none;
+    padding: 12px 20px; /* Tamaño del botón */
+    background-color: #1c1c1c; /* Color oscuro para los botones */
+    color: white; /* Texto blanco para contraste */
+    border: none; /* Sin borde adicional */
     border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
     transition: background-color 0.3s; /* Transición suave */
 }
 
@@ -116,9 +116,15 @@ button:active {
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #1c1c1c;
-    color: #f5f5f5;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    background-color: #1c1c1c; /* Fondo oscuro para el pie de página */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espacio para el pie de página */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para el mapa (si se incluye) */
+#map {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Abarca todo el ancho */
 }
