@@ -2,10 +2,57 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi emprendimiento</title>
+    <title>Mi Emprendimiento</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Vincula el archivo CSS -->
 </head>
 <body>
-    <h1>Bienvenido a mi emprendimiento</h1>
-    <p>Estamos emocionados de ofrecerte nuestros productos y servicios.</p>
+    <!-- Cabecera del sitio web -->
+    <header>
+        <h1>Bienvenidos a Mi Emprendimiento</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de galería -->
+    <section id="gallery">
+        <h2>Galería de Trabajos</h2>
+        <div class="gallery-container">
+            <!-- Ejemplo de imágenes para la galería -->
+            <img src="https://via.placeholder.com/150" alt="Trabajo 1">
+            <img src="https://via.placeholder.com/150" alt="Trabajo 2">
+            <img src="https://via.placeholder.com/150" alt="Trabajo 3">
+            <img src="https://via.placeholder.com/150" alt="Trabajo 4">
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post"> <!-- Acción futura -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi Emprendimiento. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vincula el archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
