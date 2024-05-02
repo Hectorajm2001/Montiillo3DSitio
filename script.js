@@ -44,7 +44,7 @@ function showNextImage() {
 
 // Mostrar un mapa de Google Maps
 function initMap() {
-    var location = { lat: 23.736, lng: -99.150 }; // Coordenadas de Ciudad Victoria, Tamaulipas
+    var location = { lat: 23.713283, lng: -99.136499 }; // Coordenadas de Ciudad Victoria, Tamaulipas
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 15,
         center: location,
