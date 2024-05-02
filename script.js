@@ -1,8 +1,3 @@
-// Alerta de bienvenida cuando se carga la página
-window.onload = function () {
-    alert("Bienvenido a Montiillo 3D, ¡explora nuestras soluciones de impresión 3D!");
-};
-
 // Validación del formulario de contacto
 document.addEventListener("DOMContentLoaded", function () {
     var form = document.querySelector("form");
