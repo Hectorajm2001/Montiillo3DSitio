@@ -60,6 +60,8 @@ header nav ul li a:hover {
 .carousel {
     position: relative; /* Permite el posicionamiento relativo de los elementos */
     width: 100%; /* Abarca todo el ancho del contenedor */
+    padding: 40px; /* Más espacio para separar secciones */
+    text-align: center;
 }
 
 .carousel-item {
