@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Asegúrate de que al cargar la página, solo la primera imagen esté visible
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    carouselItems.forEach((item, index) => {
+        item.style.display = index === 0 ? "block" : "none";
+    });
+});
+
 // Carrusel de imágenes para la galería
 var currentImageIndex = 0;
 function showNextImage() {
@@ -41,14 +49,6 @@ function showNextImage() {
         images[currentImageIndex].style.display = "block"; // Mostrar la siguiente imagen
     }
 }
-// Asegúrate de que al cargar la página, solo la primera imagen esté visible
-document.addEventListener("DOMContentLoaded", function () {
-    const carouselItems = document.querySelectorAll(".carousel-item");
-    carouselItems.forEach((item, index) => {
-        item.style.display = index === 0 ? "block" : "none";
-    });
-});
-
 
 // Mostrar un mapa de Google Maps
 function initMap() {
