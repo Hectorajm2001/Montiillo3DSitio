@@ -32,27 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Carrusel de imágenes para la galería
-// Índice actual del carrusel
-let currentIndex = 0;
-
-// Función para mostrar la siguiente imagen
+var currentImageIndex = 0;
 function showNextImage() {
-    const carouselItems = document.querySelectorAll(".carousel-item");
-    const totalItems = carouselItems.length;
-
-    // Oculta la imagen actual
-    carouselItems[currentIndex].style.display = "none";
-
-    // Calcula el próximo índice
-    currentIndex = (currentIndex + 1) % totalItems;
-
-    // Muestra la siguiente imagen
-    carouselItems[currentIndex].style.display = "block";
+    var images = document.querySelectorAll(".gallery-container img");
+    if (images.length > 0) {
+        images[currentImageIndex].style.display = "none"; // Ocultar la imagen actual
+        currentImageIndex = (currentImageIndex + 1) % images.length; // Pasar a la siguiente
+        images[currentImageIndex].style.display = "block"; // Mostrar la siguiente imagen
+    }
 }
-
-// Inicia el carrusel y cambia la imagen cada 3 segundos
-setInterval(showNextImage, 3000);
-
 // Asegúrate de que al cargar la página, solo la primera imagen esté visible
 document.addEventListener("DOMContentLoaded", function () {
     const carouselItems = document.querySelectorAll(".carousel-item");
