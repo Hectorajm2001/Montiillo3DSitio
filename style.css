@@ -51,10 +51,12 @@ header nav ul li a:hover {
 }
 
 .gallery-container {
-    display: flex; /* Flexbox para disposición dinámica */
-    flex-wrap: wrap; /* Para adaptarse a diferentes tamaños de pantalla */
-    justify-content: center; /* Centra los elementos */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+    justify-content: center; /* Centra las imágenes */
+    gap: 10px; /* Espacio entre imágenes */
 }
+
 
 .gallery-container img {
     margin: 15px;
