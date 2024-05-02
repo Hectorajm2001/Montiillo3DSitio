@@ -31,24 +31,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Asegúrate de que al cargar la página, solo la primera imagen esté visible
+// Índice actual del carrusel
+let currentIndex = 0;
+
+// Función para mostrar la siguiente imagen en el carrusel
+function rotateCarousel() {
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    const totalItems = carouselItems.length;
+
+    // Oculta la imagen actual
+    carouselItems[currentIndex].style.display = "none";
+
+    // Incrementa el índice para la siguiente imagen
+    currentIndex = (currentIndex + 1) % totalItems; // Rotación cíclica
+
+    // Muestra la siguiente imagen
+    carouselItems[currentIndex].style.display = "block";
+}
+
+// Configura un intervalo para cambiar automáticamente cada 3 segundos
+setInterval(rotateCarousel, 3000);
+
+// Asegúrate de que solo la primera imagen se muestre inicialmente
 document.addEventListener("DOMContentLoaded", function () {
     const carouselItems = document.querySelectorAll(".carousel-item");
     carouselItems.forEach((item, index) => {
-        item.style.display = index === 0 ? "block" : "none";
+        item.style.display = index === 0 ? "block" : "none"; // Solo muestra la primera imagen
     });
 });
 
-// Carrusel de imágenes para la galería
-var currentImageIndex = 0;
-function showNextImage() {
-    var images = document.querySelectorAll(".gallery-container img");
-    if (images.length > 0) {
-        images[currentImageIndex].style.display = "none"; // Ocultar la imagen actual
-        currentImageIndex = (currentImageIndex + 1) % images.length; // Pasar a la siguiente
-        images[currentImageIndex].style.display = "block"; // Mostrar la siguiente imagen
-    }
-}
 
 // Mostrar un mapa de Google Maps
 function initMap() {
