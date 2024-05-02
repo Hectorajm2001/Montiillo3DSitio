@@ -2,72 +2,58 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Montiillo 3D - Tecnología e Impresión 3D</title>
-    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Vincula el CSS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para diseño responsivo -->
+    <title>Impresiones 3D y Corte Láser</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <!-- Cabecera del sitio web -->
     <header>
-        <h1>Bienvenidos a Montiillo 3D</h1>
+        <h1>Impresiones 3D y Corte Láser</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección de galería -->
-    <section id="carousel">
-        <h2>Galería de Trabajos</h2>
-        <div class="carousel-item">
-            <!-- Imágenes para la galería, puedes cambiarlas por tus propios trabajos -->
-            <img src="images/post-07.png" alt="Trabajo 1">
-            <img src="images/post-08.png" alt="Trabajo 2">
-            <img src="images/post-09.png" alt="Trabajo 3">
-        </div>
-    </section>
+    <main>
+        <section id="presentacion">
+            <h2>Bienvenido a nuestra empresa de impresiones 3D y corte láser</h2>
+            <p>Ofrecemos soluciones personalizadas y de alta calidad para tus necesidades de impresión 3D y corte láser.</p>
+        </section>
 
-    
-    <section>
-        <div>
-            <h2>Testimonios de Clientes</h2>
-            <p id="testimonial-text"></p> <!-- Este elemento mostrará el testimonial actual -->
-        </div>
-    </section>
-    
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZXw5akLc4h25Vk7BJJ3DRy2I7uAu8jR0&callback=initMap"></script>
-    <div id="map" style="height: 400px; width: 100%;"></div>
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <p>Desde prototipos a proyectos personalizados, ofrecemos una amplia gama de servicios de impresión 3D y corte láser.</p>
+        </section>
 
-    
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="imagen1.jpg" alt="Ejemplo 1">
+                <img src="imagen2.jpg" alt="Ejemplo 2">
+                <img src="imagen3.jpg" alt="Ejemplo 3">
+            </div>
+        </section>
 
-    <!-- Sección de contacto -->
-    <section id="contact">
-        <h2>Formulario de Contacto</h2>
-        <form action="#" method="post"> <!-- Acción del formulario, para futuro uso -->
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Montiillo 3D. Todos los derechos reservados.</p>
-        <p>Ubicación: Tamaulipas, México, Ciudad Victoria, Fracc. Lomas de Guadalupe, Calle Mier #990</p>
-        <p>Contacto: Tel: 8341131147 | Email: 3dmontiillo@gmail.com | Instagram: @Montiillo3D</p>
+        <p>&copy; 2024 Impresiones 3D y Corte Láser. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Vincula el archivo JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
