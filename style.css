@@ -63,10 +63,11 @@ header nav ul li a:hover {
 }
 
 .carousel-item {
-    display: none; /* Oculta las imágenes por defecto */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+    justify-content: center; /* Centra las imágenes */
+    gap: 10px; /* Espacio entre imágenes */
     position: absolute; /* Posicionamiento absoluto para facilitar el cambio entre imágenes */
-    top: 0;
-    left: 0;
 }
 
 .carousel img {
